@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+    --color-brand: '#F97316',
+    --color-brandHover: '#EA580C',
+    --color-bgLight: '#FFF7ED',
+    --color-textDark: '#0F172A',
+    --color-textMuted: '#334155',
+}
