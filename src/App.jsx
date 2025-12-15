@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './sections/Herosection';
 import PartnersSection from './sections/Partnersection';
 import Worksection from './sections/Worksection';
-import ServicesSection from './sections/Servicessection';
+import ServicesSection from './sections/ServicesSection';
 import GetintouchSection from './sections/ContactSection';
 import FooterSection from './sections/footerSection';
 
