@@ -61,11 +61,10 @@ const HeroSection = () => {
                         </div>                      
                     </div>
 
-                    {/* Right Side - Vector Image - Added lg:-mt-6 to move it up */}
                     <div className="lg:w-1/2 space-y-6 lg:pt-8 lg:-mt-6">
-                        {/* Main Vector Image Container */}
+
                         <div className="relative">
-                            {/* Background decorative elements - Adjusted positions */}
+          
                             <div className="absolute -top-2 -right-2 h-32 w-32 rounded-full bg-gradient-to-br from-orange-100/50 to-transparent -z-10"></div>
                             <div className="absolute -bottom-2 -left-2 h-32 w-32 rounded-full bg-gradient-to-tr from-orange-50 to-transparent -z-10"></div>
 
@@ -86,10 +85,7 @@ const HeroSection = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
                             </div>
 
-                            {/* Floating badge - Adjusted position */}
 
-
-                            {/* Floating stats card - Adjusted position */}
                             <div className="absolute -bottom-2 -left-2 bg-white rounded-xl shadow-lg p-3 max-w-[180px] border border-gray-100">
                                 <div className="flex items-center gap-2">
                                     <div className="h-8 w-8 rounded-lg bg-[#FFF7ED] flex items-center justify-center flex-shrink-0">

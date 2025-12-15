@@ -20,7 +20,7 @@ const PartnersSection = () => {
   const marqueeContainerRef = useRef(null);
   const marqueeContainerRef2 = useRef(null);
 
-  // Top company logos with real brand colors
+
   const topCompanies = [
     { 
       name: 'Amazon', 
@@ -84,10 +84,9 @@ const PartnersSection = () => {
     },
   ];
 
-  // Circular marquee - create a seamless loop by doubling and adding offset
+
   const scrollingCompanies = [...topCompanies, ...topCompanies, ...topCompanies];
 
-  // Manual scroll functions
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({ left: -300, behavior: 'smooth' });
@@ -203,13 +202,12 @@ const PartnersSection = () => {
             <ChevronRight className="h-6 w-6 text-gray-600 group-hover:text-[#F97316]" />
           </motion.button>
 
-          {/* Left gradient fade */}
+
           <div className="absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white via-white to-transparent z-10 pointer-events-none"></div>
           
-          {/* Right gradient fade */}
+
           <div className="absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white via-white to-transparent z-10 pointer-events-none"></div>
 
-          {/* Circular Auto-scrolling Marquee */}
           <div className="relative overflow-hidden">
             <div
               ref={scrollContainerRef}
@@ -219,18 +217,18 @@ const PartnersSection = () => {
                 msOverflowStyle: 'none'
               }}
             >
-              {/* Single continuous marquee with triple repetition for seamless circular effect */}
+   
               <motion.div 
                 ref={marqueeContainerRef}
                 className="flex gap-8"
                 animate={{ 
-                  x: [0, -1 * topCompanies.length * 192] // Calculate based on card width + gap
+                  x: [0, -1 * topCompanies.length * 192] 
                 }}
                 transition={{
                   x: {
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 30, // Slower for better visibility
+                    duration: 30,
                     ease: "linear"
                   }
                 }}
@@ -262,8 +260,6 @@ const PartnersSection = () => {
           </div>
         </div>
 
-        {/* Stats Section with Lucide Icons */}
-        {/* Replace the entire stats section with this minimal version */}
 <motion.div 
   className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mt-20"
   initial={{ opacity: 0 }}
@@ -299,7 +295,7 @@ const PartnersSection = () => {
     const Icon = stat.Icon;
     return (
       <div key={index} className="text-center">
-        {/* Icon above the number */}
+
         <motion.div 
           className="flex justify-center mb-3"
           initial={{ scale: 0 }}
@@ -311,8 +307,7 @@ const PartnersSection = () => {
         >
           <Icon className="h-8 w-8 text-[#F97316]" />
         </motion.div>
-        
-        {/* Animated number */}
+
         <div className="flex items-baseline justify-center mb-2">
           <AnimatedCounter value={stat.number} />
           <span className="text-2xl font-bold text-[#F97316] ml-1">

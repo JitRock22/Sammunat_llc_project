@@ -87,16 +87,16 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        {/* Main Content - Image Left, Form Right */}
+
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          {/* Left Side - Image Only */}
+
           <motion.div 
             className="lg:w-1/2"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Image Container with Benefits Overlay */}
+
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
