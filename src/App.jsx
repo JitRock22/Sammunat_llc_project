@@ -4,7 +4,7 @@ import PartnersSection from './sections/Partnersection';
 import Worksection from './sections/Worksection';
 import ServicesSection from './sections/ServicesSection';
 import GetintouchSection from './sections/ContactSection';
-import FooterSection from './sections/footerSection';
+import Footer from './sections/FooterSection';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Worksection />
       <ServicesSection />
       <GetintouchSection />
-      <FooterSection />
+      <Footer />
     </div>
   );
 }
